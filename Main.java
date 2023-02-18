@@ -14,5 +14,12 @@ public class Main {
         } else {
             System.out.println("На улице холодно, нужно надеть шапку");
         }
+    //Task #3
+        short carSpeed = 95;
+        if (carSpeed > 60) {
+            System.out.println("Если скорость " + carSpeed + "км/ч придется заплатить штраф");
+        } else {
+            System.out.println("Если скорость " + carSpeed + " можно ездить спокойно");
+        }
     }
 }
