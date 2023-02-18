@@ -65,8 +65,6 @@ public class Main {
             byte freeSeatingPlaces = (byte) (seatingPlaces - occupiedSeatingPlaces);
             System.out.println("В вагоне есть свободные места: " + freeSeatingPlaces + " сидячих места");
         }
-
-
     //Task #7
         int one = 6;
         int two = 8;
