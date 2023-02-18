@@ -46,6 +46,17 @@ public class Main {
         if (ageHum5 > 14) {
             System.out.println("Если возраст человека " + ageHum5 + " то он может кататься на атракционе без сопровождения взрослого");
         }
+    //Task #6
+        int one = 6;
+        int two = 8;
+        int three = 2;
+        if (one > two && one > three) {
+            System.out.println("число " + one + " самое большое");
+        } else if (two > one && two > three) {
+            System.out.println("число " + two + " самое большое");
+        } else if (three > one && three > two) {
+            System.out.println("число " + three + " самое большое");
+        }
         }
     }
 
