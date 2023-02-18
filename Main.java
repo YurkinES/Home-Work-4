@@ -47,6 +47,27 @@ public class Main {
             System.out.println("Если возраст человека " + ageHum5 + " то он может кататься на атракционе без сопровождения взрослого");
         }
     //Task #6
+        byte allPlaces = 102;
+        byte seatingPlaces = 60;
+        byte stayPlaces = (byte) (allPlaces - seatingPlaces);
+        byte occupiedSeatingPlaces = 60;
+        byte occupiedStayPlaces = 40;
+        if (occupiedSeatingPlaces >= seatingPlaces && occupiedStayPlaces >= stayPlaces) {
+            System.out.println("Свободных мест в вагоне нет");
+        } else if (occupiedSeatingPlaces < seatingPlaces && occupiedStayPlaces < stayPlaces) {
+            byte freeSeatingPlaces = (byte) (seatingPlaces - occupiedSeatingPlaces);
+            byte freeStayPlaces = (byte) (stayPlaces - occupiedStayPlaces);
+            System.out.println("В вагоне есть свободные места: " + freeSeatingPlaces + " сидячих места и " + freeStayPlaces + " стоячих места");
+        } else if (occupiedSeatingPlaces >= seatingPlaces && occupiedStayPlaces < stayPlaces) {
+            byte freeStayPlaces = (byte) (stayPlaces - occupiedStayPlaces);
+            System.out.println("В вагоне есть свободные места: " + freeStayPlaces + " стоячих места");
+        } else if (occupiedSeatingPlaces < seatingPlaces && occupiedStayPlaces >= stayPlaces) {
+            byte freeSeatingPlaces = (byte) (seatingPlaces - occupiedSeatingPlaces);
+            System.out.println("В вагоне есть свободные места: " + freeSeatingPlaces + " сидячих места");
+        }
+
+
+    //Task #7
         int one = 6;
         int two = 8;
         int three = 2;
